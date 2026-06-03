@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electricista en Barcelona | ElectroJul Instalaciones Eléctricas</title>
+<meta name="description" content="Electricista en Barcelona con más de 10 años de experiencia. Instalaciones eléctricas, reformas, obra nueva y mantenimiento. Servicio profesional, rápido y seguro. Llámanos ahora.">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KH5BM14PZC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KH5BM14PZC');
+</script>
+<meta name="keywords" content="electricista barcelona, instalador eléctrico barcelona, instalación eléctrica barcelona, electricista urgente barcelona, reforma eléctrica barcelona, mantenimiento eléctrico barcelona">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0b0f14;
+  color: white;
+  overflow-x: hidden;
+}
+ 
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background: rgba(11,15,20,0.97);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #1e2530;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo-header { height: 52px; width: auto; display: block; }
+.nav a {
+  color: #ccc;
+  margin-left: 24px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+.nav a:hover { color: #ff7a00; }
+ 
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px 90px;
+  background: linear-gradient(180deg, #0b0f14 0%, #111820 100%);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -100px; left: 50%;
+  transform: translateX(-50%);
+  width: 700px; height: 500px;
+  background: radial-gradient(ellipse, rgba(255,122,0,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+.logo-hero {
+  width: 100%; max-width: 200px;
+  height: auto; margin: 0 auto 16px; display: block;
+}
+.hero-name {
+  font-size: 46px; font-weight: 800;
+  letter-spacing: 3px; margin: 0 0 6px;
+}
+.hero-name span { color: #ff7a00; }
+.hero-sub {
+  color: #aaa; font-size: 18px; margin: 0 0 10px;
+}
+.hero-exp {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,122,0,0.1);
+  border: 1px solid rgba(255,122,0,0.3);
+  color: #ff7a00; font-size: 14px; font-weight: 600;
+  padding: 6px 16px; border-radius: 20px; margin-bottom: 32px;
+}
+.hero-btns {
+  display: flex; justify-content: center;
+  gap: 14px; flex-wrap: wrap;
+}
+ 
+/* BOTONES */
+.btn {
+  position: relative;
+  background: #ff7a00;
+  padding: 16px 32px; color: white;
+  text-decoration: none; border-radius: 8px;
+  display: inline-flex; align-items: center; gap: 10px;
+  font-weight: bold; font-size: 16px;
+  overflow: hidden;
+  transition: transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(255,122,0,0.3);
+  border: none; cursor: pointer;
+}
+.btn::before {
+  content: ''; position: absolute;
+  top: -50%; left: -75%; width: 50%; height: 200%;
+  background: rgba(255,255,255,0.2);
+  transform: skewX(-20deg); transition: left 0.4s ease;
+}
+.btn:hover::before { left: 130%; }
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(255,180,0,0.6), 0 0 50px rgba(255,120,0,0.2);
+}
+.btn:active { transform: scale(0.97); }
+.btn.whatsapp {
+  background: #25d366;
+  box-shadow: 0 4px 15px rgba(37,211,102,0.3);
+}
+.btn.whatsapp:hover {
+  box-shadow: 0 0 25px rgba(37,211,102,0.5), 0 0 50px rgba(0,200,80,0.2);
+}
+.btn.outline {
+  background: transparent;
+  border: 2px solid #ff7a00; color: #ff7a00;
+  box-shadow: none;
+}
+.btn.outline:hover { background: rgba(255,122,0,0.1); }
+ 
+@keyframes spark {
+  0%   { opacity: 0; transform: scale(0) rotate(0deg); }
+  50%  { opacity: 1; transform: scale(1.3) rotate(180deg); }
+  100% { opacity: 0; transform: scale(0) rotate(360deg); }
+}
+.btn .spark {
+  position: absolute; top: 6px; right: 10px;
+  font-size: 11px; animation: spark 1.8s infinite; pointer-events: none;
+}
+.btn .spark:nth-child(2) { animation-delay: 0.6s; top: auto; bottom: 6px; right: 14px; }
+.btn .spark:nth-child(3) { animation-delay: 1.2s; top: 10px; right: 20px; }
+ 
+/* STATS */
+.stats {
+  display: flex; justify-content: center;
+  flex-wrap: wrap; gap: 0;
+  background: #111820;
+  border-top: 1px solid #1e2a38;
+  border-bottom: 1px solid #1e2a38;
+}
+.stat {
+  padding: 28px 48px; text-align: center;
+  border-right: 1px solid #1e2a38;
+  flex: 1; min-width: 150px;
+}
+.stat:last-child { border-right: none; }
+.stat-num {
+  font-size: 36px; font-weight: 800; color: #ff7a00; line-height: 1;
+}
+.stat-label { color: #888; font-size: 13px; margin-top: 4px; }
+ 
+/* SECCIONES */
+.section { padding: 70px 20px; text-align: center; }
+.section h2 { font-size: 30px; margin-bottom: 12px; }
+.section h2 span { color: #ff7a00; }
+.section-sub { color: #888; font-size: 16px; margin-bottom: 44px; }
+ 
+/* SERVICIOS */
+.services {
+  display: flex; flex-wrap: wrap;
+  justify-content: center; gap: 20px;
+  max-width: 960px; margin: 0 auto;
+}
+.card {
+  background: #111820;
+  border: 1px solid #1e2a38;
+  padding: 32px 26px; width: 280px;
+  border-radius: 12px;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  text-align: left;
+}
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #ff7a00;
+  box-shadow: 0 8px 30px rgba(255,122,0,0.1);
+}
+.card-icon { font-size: 32px; margin-bottom: 14px; }
+.card h3 { margin: 0 0 10px; font-size: 18px; }
+.card p { color: #888; margin: 0; font-size: 14px; line-height: 1.6; }
+ 
+/* BENEFICIOS */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px; max-width: 900px; margin: 0 auto;
+}
+.benefit-card {
+  background: #111820;
+  border: 1px solid #1e2a38;
+  border-radius: 10px;
+  padding: 24px 20px;
+  text-align: left;
+  transition: border-color 0.2s;
+}
+.benefit-card:hover { border-color: #ff7a00; }
+.benefit-card .icon { font-size: 26px; margin-bottom: 10px; }
+.benefit-card h4 { font-size: 16px; margin-bottom: 6px; }
+.benefit-card p { color: #888; font-size: 13px; line-height: 1.5; }
+ 
+/* GALERÍA */
+.gallery-section { background: #0e1319; }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px; max-width: 1000px; margin: 0 auto;
+}
+.gallery-item {
+  border-radius: 10px; overflow: hidden;
+  aspect-ratio: 4/3;
+  background: #111820;
+  border: 1px solid #1e2a38;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.gallery-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 30px rgba(255,122,0,0.15);
+}
+.gallery-item img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  transition: opacity 0.3s;
+}
+.gallery-placeholder {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  color: #333; font-size: 13px; gap: 8px;
+}
+.gallery-placeholder span { font-size: 32px; }
+ 
+/* RESEÑAS */
+.reviews-section { background: #0b0f14; }
+.reviews-grid {
+  display: flex; flex-wrap: wrap;
+  justify-content: center; gap: 20px;
+  max-width: 960px; margin: 0 auto 50px;
+}
+.review-card {
+  background: #111820;
+  border: 1px solid #1e2a38;
+  border-radius: 12px;
+  padding: 26px; width: 280px; text-align: left;
+  transition: border-color 0.2s;
+}
+.review-card:hover { border-color: #ff7a00; }
+.review-stars { color: #ff7a00; font-size: 18px; margin-bottom: 12px; }
+.review-text { color: #ccc; font-size: 14px; line-height: 1.6; margin-bottom: 16px; font-style: italic; }
+.review-author { font-weight: 700; font-size: 14px; color: #ff7a00; }
+.review-date { font-size: 12px; color: #555; margin-top: 2px; }
+ 
+.review-form-wrap { max-width: 580px; margin: 0 auto; text-align: left; }
+.review-form-title {
+  text-align: center; font-size: 20px; font-weight: 700;
+  margin-bottom: 24px; color: #ccc;
+}
+.review-form {
+  background: #111820;
+  border: 1px solid #1e2a38;
+  border-radius: 12px; padding: 32px;
+}
+.form-row { display: flex; gap: 20px; flex-wrap: wrap; }
+.form-group {
+  display: flex; flex-direction: column;
+  flex: 1; min-width: 180px; margin-bottom: 18px;
+}
+.form-group label {
+  font-size: 12px; color: #888; margin-bottom: 7px;
+  text-transform: uppercase; letter-spacing: 0.8px;
+}
+.form-group input,
+.form-group textarea {
+  background: #0b0f14;
+  border: 1px solid #1e2a38;
+  border-radius: 6px; color: white;
+  padding: 11px 14px; font-size: 15px;
+  font-family: inherit; outline: none;
+  transition: border-color 0.2s; resize: vertical;
+}
+.form-group input:focus,
+.form-group textarea:focus { border-color: #ff7a00; }
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: #444; }
+.stars-input { display: flex; gap: 6px; margin-top: 4px; }
+.star {
+  font-size: 30px; color: #2a2a2a;
+  cursor: pointer; transition: color 0.15s, transform 0.1s;
+}
+.star.active { color: #ff7a00; }
+.star:hover { transform: scale(1.2); }
+ 
+/* ZONA */
+.zone-section { background: #111820; }
+.zone-content {
+  max-width: 700px; margin: 0 auto;
+}
+.zone-tags {
+  display: flex; flex-wrap: wrap;
+  justify-content: center; gap: 10px; margin-top: 20px;
+}
+.zone-tag {
+  background: #0b0f14;
+  border: 1px solid #1e2a38;
+  padding: 8px 18px; border-radius: 20px;
+  font-size: 14px; color: #ccc;
+  transition: border-color 0.2s, color 0.2s;
+}
+.zone-tag:hover { border-color: #ff7a00; color: #ff7a00; }
+ 
+/* CONTACTO */
+.contact {
+  background: linear-gradient(180deg, #0b0f14, #111820);
+  padding: 70px 20px; text-align: center;
+}
+.contact h2 { font-size: 30px; margin-bottom: 8px; }
+.contact-info {
+  color: #888; font-size: 17px; margin: 8px 0;
+}
+.contact-info strong { color: white; font-size: 20px; }
+.contact-btns {
+  margin-top: 32px;
+  display: flex; justify-content: center;
+  gap: 14px; flex-wrap: wrap;
+}
+.contact-email {
+  margin-top: 20px; color: #666; font-size: 14px;
+}
+.contact-email a { color: #ff7a00; text-decoration: none; }
+ 
+/* FLOATING BUTTONS */
+.float-btns {
+  position: fixed; bottom: 24px; right: 24px;
+  display: flex; flex-direction: column; gap: 12px;
+  z-index: 200;
+}
+.float-btn {
+  width: 56px; height: 56px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; font-size: 22px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.float-btn:hover { transform: scale(1.1); }
+.float-btn.call { background: #ff7a00; box-shadow: 0 4px 20px rgba(255,122,0,0.4); }
+.float-btn.wa { background: #25d366; box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+ 
+/* FOOTER */
+footer {
+  text-align: center; padding: 24px;
+  color: #444; font-size: 13px;
+  border-top: 1px solid #1e2530;
+}
+ 
+@media (max-width: 600px) {
+  header { padding: 10px 16px; }
+  .logo-header { height: 40px; }
+  .hero { padding: 50px 16px 60px; }
+  .logo-hero { max-width: 160px; }
+  .hero-name { font-size: 32px; }
+  .stat { padding: 20px 24px; }
+  .stat-num { font-size: 28px; }
+  .review-form { padding: 20px; }
+}
+</style>
+</head>
+<body>
+ 
+<header>
+  <img src="Logo_EJ_transparent.png" alt="ElectroJul" class="logo-header">
+  <nav class="nav">
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Trabajos</a>
+    <a href="#reseñas">Reseñas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+ 
+<!-- HERO -->
+<section class="hero">
+  <img src="Logo_EJ_transparent.png" alt="ElectroJul Instalaciones Eléctricas" class="logo-hero">
+  <h1 class="hero-name">ELECTRO<span>JUL</span></h1>
+  <p class="hero-sub">Electricista profesional en Barcelona y alrededores</p>
+  <div class="hero-exp">⚡ Más de 10 años de experiencia</div>
+  <div class="hero-btns">
+    <a class="btn" href="tel:34632024735">
+      <span class="spark">⚡</span><span class="spark">⚡</span><span class="spark">⚡</span>
+      ⚡ Llamar ahora
+    </a>
+    <a class="btn whatsapp" href="https://wa.me/34632024735">
+      <span class="spark">✦</span><span class="spark">✦</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</section>
+ 
+<!-- STATS -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num">+10</div>
+    <div class="stat-label">Años de experiencia</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">+200</div>
+    <div class="stat-label">Proyectos completados</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">100%</div>
+    <div class="stat-label">Clientes satisfechos</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">24h</div>
+    <div class="stat-label">Respuesta rápida</div>
+  </div>
+</div>
+ 
+<!-- SERVICIOS -->
+<section id="servicios" class="section">
+  <h2>Nuestros <span>servicios</span></h2>
+  <p class="section-sub">Soluciones eléctricas completas para particulares y empresas</p>
+  <div class="services">
+    <div class="card">
+      <div class="card-icon">⚡</div>
+      <h3>Obra Nueva</h3>
+      <p>Instalaciones eléctricas completas en viviendas, locales y edificios desde cero.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔧</div>
+      <h3>Reformas</h3>
+      <p>Modernización y actualización de instalaciones eléctricas antiguas según normativa.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🛠️</div>
+      <h3>Mantenimiento</h3>
+      <p>Revisión periódica, reparación de averías y mantenimiento preventivo.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💡</div>
+      <h3>Iluminación</h3>
+      <p>Instalación de iluminación LED, domótica y sistemas de ahorro energético.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔌</div>
+      <h3>Cuadros Eléctricos</h3>
+      <p>Instalación y reparación de cuadros de distribución y protecciones.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🏠</div>
+      <h3>Comunidades</h3>
+      <p>Mantenimiento eléctrico para comunidades de vecinos y edificios.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- POR QUÉ ELEGIRNOS -->
+<section class="section zone">
+  <h2>¿Por qué elegir <span>ElectroJul</span>?</h2>
+  <p class="section-sub">Calidad, seguridad y confianza en cada trabajo</p>
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <div class="icon">🏆</div>
+      <h4>+10 Años de experiencia</h4>
+      <p>Más de 10 años realizando instalaciones eléctricas en Barcelona con total garantía.</p>
+    </div>
+ 
+    <div class="benefit-card">
+      <div class="icon">⚡</div>
+      <h4>Servicio rápido</h4>
+      <p>Respuesta en menos de 24 horas. Presupuesto sin compromiso.</p>
+    </div>
+    <div class="benefit-card">
+      <div class="icon">🛡️</div>
+      <h4>Trabajo seguro</h4>
+      <p>Todos los trabajos cumplen con el Reglamento Electrotécnico de Baja Tensión.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- GALERÍA -->
+<section id="galeria" class="section gallery-section">
+  <h2>Nuestros <span>trabajos</span></h2>
+  <p class="section-sub">Algunos proyectos realizados en Barcelona</p>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="foto1.jpg" alt="Trabajo eléctrico 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="gallery-placeholder" style="display:none"><span>📸</span>foto1.jpg</div>
+    </div>
+    <div class="gallery-item">
+      <img src="foto2.jpg" alt="Trabajo eléctrico 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="gallery-placeholder" style="display:none"><span>📸</span>foto2.jpg</div>
+    </div>
+    <div class="gallery-item">
+      <img src="foto3.jpg" alt="Trabajo eléctrico 3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="gallery-placeholder" style="display:none"><span>📸</span>foto3.jpg</div>
+    </div>
+    <div class="gallery-item">
+      <img src="foto4.jpg" alt="Trabajo eléctrico 4" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="gallery-placeholder" style="display:none"><span>📸</span>foto4.jpg</div>
+    </div>
+    <div class="gallery-item">
+      <img src="foto5.jpg" alt="Trabajo eléctrico 5" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="gallery-placeholder" style="display:none"><span>📸</span>foto5.jpg</div>
+    </div>
+    <div class="gallery-item">
+      <img src="foto6.jpg" alt="Trabajo eléctrico 6" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="gallery-placeholder" style="display:none"><span>📸</span>foto6.jpg</div>
+    </div>
+  </div>
+ 
+</section>
+ 
+<!-- RESEÑAS -->
+<section id="reseñas" class="section reviews-section">
+  <h2>Lo que dicen nuestros <span>clientes</span></h2>
+  <p class="section-sub">La satisfacción de nuestros clientes es nuestra mejor carta de presentación</p>
+ 
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Muy profesional y rápido. Vino el mismo día, solucionó la avería y dejó todo limpio. Totalmente recomendable."</p>
+      <div class="review-author">Carlos M.</div>
+      <div class="review-date">Barcelona · hace 2 semanas</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Reformamos toda la instalación eléctrica del piso y quedó perfecta. Buen precio y muy buen trabajo."</p>
+      <div class="review-author">Laura P.</div>
+      <div class="review-date">Hospitalet · hace 1 mes</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Instaló el cuadro eléctrico nuevo en mi local. Puntual, serio y con muy buen precio. Repetiré sin duda."</p>
+      <div class="review-author">Marta S.</div>
+      <div class="review-date">Barcelona · hace 3 semanas</div>
+    </div>
+  </div>
+ 
+  <div class="review-form-wrap">
+    <p class="review-form-title">¿Has trabajado con nosotros? ¡Déjanos tu opinión!</p>
+    <form action="https://formspree.io/f/XXXXXXXX" method="POST" class="review-form" id="reviewForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Tu nombre</label>
+          <input type="text" name="nombre" placeholder="Ej: María García" required>
+        </div>
+        <div class="form-group">
+          <label>Valoración</label>
+          <div class="stars-input" id="starsInput">
+            <span class="star" data-val="1">★</span>
+            <span class="star" data-val="2">★</span>
+            <span class="star" data-val="3">★</span>
+            <span class="star" data-val="4">★</span>
+            <span class="star" data-val="5">★</span>
+          </div>
+          <input type="hidden" name="valoracion" id="valoracionInput" value="5">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Tu reseña</label>
+        <textarea name="reseña" rows="4" placeholder="Cuéntanos tu experiencia..." required></textarea>
+      </div>
+      <button type="submit" class="btn" style="width:100%; justify-content:center;">
+        <span class="spark">⚡</span><span class="spark">⚡</span><span class="spark">⚡</span>
+        ⚡ Enviar reseña
+      </button>
+    </form>
+    <p id="formSuccess" style="display:none; color:#ff7a00; font-weight:bold; margin-top:16px; text-align:center;">¡Gracias por tu reseña! 🙌</p>
+  </div>
+</section>
+ 
+<!-- ZONA DE SERVICIO -->
+<section class="section zone-section">
+  <h2>Zona de <span>servicio</span></h2>
+  <p class="section-sub">Cubrimos Barcelona y toda el área metropolitana</p>
+  <div class="zone-content">
+    <div class="zone-tags">
+      <span class="zone-tag">Barcelona</span>
+      <span class="zone-tag">Hospitalet de Llobregat</span>
+      <span class="zone-tag">Badalona</span>
+      <span class="zone-tag">Cornellà</span>
+      <span class="zone-tag">Sant Adrià</span>
+      <span class="zone-tag">Esplugues</span>
+      <span class="zone-tag">Sant Boi</span>
+      <span class="zone-tag">Gavà</span>
+      <span class="zone-tag">Castelldefels</span>
+      <span class="zone-tag">Y alrededores</span>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTACTO -->
+<section id="contacto" class="contact">
+  <h2>Contáctanos <span style="color:#ff7a00">ahora</span></h2>
+  <p style="color:#888; margin: 8px 0 28px;">Presupuesto gratuito y sin compromiso</p>
+  <p class="contact-info">📞 <strong>632 02 47 35</strong></p>
+  <p class="contact-info">📍 Barcelona y área metropolitana</p>
+  <div class="contact-btns">
+    <a class="btn" href="tel:34632024735">
+      <span class="spark">⚡</span><span class="spark">⚡</span><span class="spark">⚡</span>
+      ⚡ Llamar ahora
+    </a>
+    <a class="btn whatsapp" href="https://wa.me/34632024735">
+      <span class="spark">✦</span><span class="spark">✦</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+  <p class="contact-email">O escríbenos a <a href="mailto:infojul@electrojul.es">infojul@electrojul.es</a></p>
+</section>
+ 
+<footer>
+  <p>© 2026 ElectroJul | Electricista en Barcelona | <a href="mailto:infojul@electrojul.es" style="color:#ff7a00; text-decoration:none;">infojul@electrojul.es</a></p>
+</footer>
+ 
+<!-- BOTONES FLOTANTES -->
+<div class="float-btns">
+  <a class="float-btn call" href="tel:34632024735" title="Llamar">📞</a>
+  <a class="float-btn wa" href="https://wa.me/34632024735" title="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+ 
+<script>
+  // Estrellas interactivas
+  const stars = document.querySelectorAll('.star');
+  const valoracionInput = document.getElementById('valoracionInput');
+  let selected = 5;
+  function setStars(val) {
+    stars.forEach(s => s.classList.toggle('active', parseInt(s.dataset.val) <= val));
+  }
+  setStars(5);
+  stars.forEach(s => {
+    s.addEventListener('mouseover', () => setStars(parseInt(s.dataset.val)));
+    s.addEventListener('mouseout', () => setStars(selected));
+    s.addEventListener('click', () => {
+      selected = parseInt(s.dataset.val);
+      valoracionInput.value = selected;
+      setStars(selected);
+    });
+  });
+ 
+  // Formulario reseña
+  const form = document.getElementById('reviewForm');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+    if (res.ok) {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+  });
+</script>
+ 
+</body>
+</html>
